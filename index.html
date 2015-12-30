@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shortest Knight Route Using ember.js</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <section id="select">
+	    <table class="select-knight">
+		<tr>
+			<td> Initial Position : </td>
+			<td> {{input type="text" id="startpos" placeholder="Start Position" value=startPos insert-newline="changeStart" }} </td>
+	        </tr>
+	        <tr>    <td> Final Position :   </td>
+	    		<td> {{input type="text" id="endpos" placeholder="End Position" value=endPos insert-newline="changeEnd" }} </td>
+	        </tr>
+	    </table>
+    </section>
+
+    <section id="chessboard">
+	    <img class="board" src="http://upload.wikimedia.org/wikipedia/commons/d/d5/Chess_Board.svg">
+	    <img class="knight" id="knight" src="http://www.clker.com/cliparts/5/8/0/f/12205467171891699302portablejim_Chess_tile_-_Knight_2.svg.med.png">
+    </section>
+	
+    <section id="canvas-area">
+	    <canvas class="canv" width="350" height="350" id="trace">Canvas is not supported !</canvas>
+    </section>
+
+  <script src="js/libs/jquery-1.10.2.js"></script>
+  <script src="js/libs/handlebars-1.1.2.js"></script>
+  <script src="js/libs/ember-1.5.1.js"></script>
+    
+  </body>
+</html>
+

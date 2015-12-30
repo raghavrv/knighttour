@@ -1,0 +1,23 @@
+.board {
+    height:400px;
+    width:400px;
+    position:relative;
+    z-index:-1;
+}
+.knight {
+    position:absolute;
+    height:50px;
+    width:50px;
+    left:0px;
+    top:0px;
+    z-index:0;
+}
+.canv {
+    width:350px;
+    height:350px;
+    position:absolute;
+    top:25px;
+    left:25px;
+    z-index:1;
+}
+
